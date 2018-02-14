@@ -1,0 +1,64 @@
+--- suru-icon-theme/Suru/index.theme	2018-02-13 18:05:12.592620674 -0700
++++ index.theme	2018-02-13 18:13:42.384994964 -0700
+@@ -1,7 +1,7 @@
+ [Icon Theme]
+-Name=Suru
+-Comment=A desktop adaptation of the Ubuntu mobile icons.
+-Inherits=Humanity,hicolor
++Name=Suru-MATE
++Comment=A desktop adaptation of the Ubuntu mobile icons, adapted for Ubuntu MATE.
++Inherits=Ambiant-MATE,hicolor#Humanity,hicolor
+ Example=folder
+ 
+ # Directory list
+@@ -282,15 +282,15 @@
+ 
+ # Panel
+ 
+-[16x16/panel]
+-Context=Status
+-Size=16
+-Type=Fixed
+-
+-[24x24/panel]
+-Context=Status
+-Size=24
+-Type=Fixed
++#[16x16/panel]
++#Context=Status
++#Size=16
++#Type=Fixed
++
++#[24x24/panel]
++#Context=Status
++#Size=24
++#Type=Fixed
+ 
+ 
+ # Places
+@@ -358,12 +358,12 @@
+ MaxSize=256
+ Type=Scalable
+ 
+-[scalable/status]
+-Context=Status
+-Size=16
+-MinSize=16
+-MaxSize=256
+-Type=Scalable
++#[scalable/status]
++#Context=Status
++#Size=16
++#MinSize=16
++#MaxSize=256
++#Type=Scalable
+ 
+ 
+ #
+@@ -683,4 +683,4 @@
+ Size=256
+ MinSize=64
+ MaxSize=256
+-Type=Scalable
+\ No newline at end of file
++Type=Scalable
