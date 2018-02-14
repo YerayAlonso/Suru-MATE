@@ -8,20 +8,23 @@ patch -p0 < index.theme.patch
 
 for file in suru-icon-theme/Suru/*x*/places/folder*
 do
-  convert -colorspace gray "$file" "$file"
-  convert -fill "#87A752" -tint 100 "$file" "$file" 
+  mogrify -colorspace gray "$file"
+  mogrify -brightness-contrast 7x0 -tint 100 "$file"
+  mogrify -fill "#87A752" -tint 100 "$file"
 done
 
 for file in suru-icon-theme/Suru/*x*/places/user*
 do
-  convert -colorspace gray "$file" "$file"
-  convert -fill "#87A752" -tint 100 "$file" "$file" 
+  mogrify -colorspace gray "$file"
+  mogrify -brightness-contrast 7x0 -tint 100 "$file"
+  mogrify -fill "#87A752" -tint 100 "$file"
 done
 
 for file in suru-icon-theme/Suru/*x*/status/folder*
 do
-  convert -colorspace gray "$file" "$file"
-  convert -fill "#87A752" -tint 100 "$file" "$file" 
+  mogrify -colorspace gray "$file"
+  mogrify -brightness-contrast 7x0 -tint 100 "$file"
+  mogrify -fill "#87A752" -tint 100 "$file"
 done
 
 cp -r suru-icon-theme/Suru $HOME/.local/share/icons/Suru-MATE
