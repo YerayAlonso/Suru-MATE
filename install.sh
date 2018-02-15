@@ -3,6 +3,7 @@
 mkdir $HOME/.local/share/icons
 
 git clone https://github.com/snwh/suru-icon-theme.git
+git -C suru-icon-theme checkout 33fb4f8
 
 patch -p0 < index.theme.patch
 
