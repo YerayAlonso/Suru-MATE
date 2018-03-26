@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install git
+
 mkdir $HOME/.local/share/icons
 
 git clone https://github.com/snwh/suru-icon-theme.git
